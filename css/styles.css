@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700|Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), no-repeat center top url("../mockups/responsive-website_mobile320.png"); */
+  background-color: #FAFAFA;
+  color: #333;
+}
+
+.wrapper {
+  padding: 0 1.2em;
+}
+
+/* Fonts */
+
+li, p {
+  font: 1em/1.5 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.main-header nav li,
+.main-footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1, h2, .main-header li, .main-footer a {
+  font-weight: 700;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+.main-footer a,
+.main-header nav li,
+h2 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: -0.04375em;
+}
+
+h3 {
+  font-size: 1.1em;
+  letter-spacing: -0.04375em
+}
+
+/* Header */
+
+.main-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.intro-img img,
+#portfolio img {
+  max-width: 100%;
+}
+
+.main-footer a,
+.main-header a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+.main-header a {
+  display: block;
+  text-transform: uppercase;
+  padding: 8px 0 12px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.main-header a:hover {
+  background-color: #555;
+  color: #fff;
+  transition: 0.3S;
+}
+
+.intro-img {
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 60px;
+}
+
+/* Portfolio */
+
+#portfolio {
+  background-color: #fff;
+  padding: 20px 0 50px;
+}
+
+#portfolio h2 {
+  margin-bottom: 40px;
+}
+
+/* Skills */
+
+#skills {
+  border-top: 1px solid #e4e4e4;
+  padding: 20px 0;
+}
+
+#skills li {
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 4px 6px;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+#skills ul {
+  text-align: center;
+}
+
+/* Contact */
+
+#contact {
+  margin-top: 80px;
+}
+
+/* Footer */
+
+.main-footer {
+  padding: 25px 0;
+  margin-top: 60px;
+  border-top: 1px solid #e4e4e4;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.main-footer span {
+  float: left;
+}
+
+.main-footer a {
+  float: right;
+}
+
+.main-footer a:hover:before {
+  content: "\2191";
+  padding-right: 4px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media (min-width: 768px) {
+  /* Header */
+
+  .main-header {
+    margin-bottom: 60px;
+  }
+
+  .main-header li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+
+  .main-header a {
+    background: none;
+    border-radius: 3px;
+    padding: 10px;
+  }
+
+  .intro p {
+    float: left;
+    width: 50%;
+    text-align: left;
+  }
+
+  .intro-img {
+    float: right;
+    width: 50%;
+    padding-left: 10px;
+  }
+
+  /* Skills */
+
+  #skills h3 {
+    margin-top: 30px;
+  }
+
+  /* Portfolio */
+
+  .project {
+    float: left;
+    width: 50%;
+    padding: 0 10px 50px;
+  }
+
+  /* Contact */
+
+  .wrapper-contact {
+    margin: 0 auto;
+    width: 65%;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  /* Header */
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  .main-header h1 {
+    float: left;
+  }
+
+  .main-header nav {
+    float: right;
+  }
+
+  /* Skills */
+
+  .frameworks,
+  .techskill {
+    float: left;
+    width: 50%;
+  }
+
+  /* Portfolio */
+
+  .project {
+    float: left;
+    width: 33.33%;
+    padding: 0 10px 50px;
+  }
+
+  /* Contact */
+
+  .wrapper-contact {
+    width: 40%;
+    max-width: 600px;
+  }
+}
