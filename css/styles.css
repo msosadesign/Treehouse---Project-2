@@ -91,6 +91,7 @@ ul {
   transition: 0.3s;
 }
 
+.footer-nav a:hover,
 .main-header a:hover {
   background-color: #555;
   color: #fff;
@@ -154,15 +155,27 @@ ul {
   margin-bottom: 10px;
 }
 
+.footer-nav {
+  display: none;
+}
+
 .main-footer span {
   float: left;
 }
 
-.main-footer a {
+.footer-float-right {
   float: right;
 }
 
-.main-footer a:hover:before {
+.footer-nav ul {
+  margin: 0;
+}
+
+.footer-nav li {
+  display: inline-block;
+}
+
+.top-button:hover:before {
   content: "\2191";
   padding-right: 4px;
 }
@@ -186,6 +199,7 @@ ul {
     margin: 0 15px;
   }
 
+  .footer-nav a,
   .main-header a {
     background: none;
     border-radius: 3px;
@@ -223,6 +237,20 @@ ul {
   .wrapper-contact {
     margin: 0 auto;
     width: 65%;
+  }
+
+  /* Footer Fix */
+
+  .footer-nav {
+    display: block;
+  }
+
+  .top-button {
+    display: none;
+  }
+
+  .main-footer span {
+    margin-top: 5px;  /* To compensate the padding of the background hover of the nav elements*/
   }
 }
 
